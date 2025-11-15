@@ -1,1 +1,28 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --accent-color: #000;
+  --color-bg: #fff;
+  --font-primary: 'Inter', sans-serif;
+  --font-accent: 'Press Start 2P', cursive;
+  --font-weight-text: 410;
+  --grid-line: #d3d3d3;
+  --label-stroke: #fff;
+  --bg-smooth: linear-gradient(
+    to bottom,
+    #e7e7e7 0.01%,
+    #1a1a1a 100%
+  );
+  --bg-stripes-x: repeating-linear-gradient(
+    to right,
+    var(--grid-line) 0 2px,
+    transparent 2px 4px
+  );
+  --bg-stripes-y: repeating-linear-gradient(
+    to bottom,
+    var(--grid-line) 0 2px,
+    transparent 2px 4px
+  );
+  --page-bg: var(--bg-stripes-x), var(--bg-stripes-y), var(--bg-smooth);
+  --contour-color: var(--accent-color);
+  --animation-fill-color: #ff0000;
+}

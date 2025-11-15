@@ -39,3 +39,16 @@ function setButtonText(heart, button) {
     );
   }
 }
+
+
+// scripts/dialog.js
+document.addEventListener('DOMContentLoaded', () => {
+  const dialog = document.querySelector('.memory-dialog');
+  const openBtn = document.querySelector('.card__footer-button');
+
+  if (!dialog || !openBtn) return;
+
+  openBtn.addEventListener('click', () => {
+    dialog.showModal();
+  });
+});
